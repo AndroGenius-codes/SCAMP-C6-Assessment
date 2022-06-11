@@ -1,0 +1,464 @@
+
+
+
+/* colors*/
+
+$primary: #ff7d1a;
+$primary2:  #ffede0;
+$bold-text: #1d2025;
+$small-text: #686f7d;
+$grey: #b6bcc8;
+$white: #ffffff;
+$black: #000000;
+/* font*/
+
+$size: 16px;
+$size2: 30px;
+$logo: 30px;
+$logo2: 25px;
+
+$weight1: 300;
+$weight2: 500;
+
+/* NAVBAR mobile*/
+.container {
+   
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+
+   
+    height: 90px;
+    
+   
+    
+    position: relative;
+
+    .left-nav{
+        display: flex;
+        align-items: center;
+    
+    }
+    .right-nav {
+        display: flex;
+        align-items: center;
+        
+    }
+    .cart{
+        
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+        color: $white;
+        cursor: pointer;
+
+    }
+    .cart:hover{
+        opacity: 0.5;
+       
+
+    }
+    .profile {
+        border-radius: 50%;
+        cursor: pointer;
+        padding-bottom: 5px;
+    }
+    .profile:hover{
+        opacity: 0.5;
+       
+
+    }
+    .logo{
+        font-size: $logo;
+        font-weight: 600;
+        padding-left: 10px;
+        height: 50px;
+        
+    }
+    .navbar {
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .bar {
+        background: none;
+        
+        font-size: 1.3rem;
+        margin-left: 1rem;
+    }
+
+    .menu{
+        background: $primary;
+    
+        width: 50vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        left: -100%;
+        transition: 800ms;
+        top: 0;
+    }
+    .menu.active {
+        left: 0;
+        transition: 300ms;
+    }
+
+    .menu-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0 30px 10px;
+        list-style: none;
+        height: 70px;
+
+        a{
+            text-decoration: none;
+            display: flex;
+            font-size: $size2;
+            color: $black;
+            width: 95%;
+            font-weight: $weight2;
+            align-items: center;
+            padding: 0 16px;
+            height: 100%;
+            
+        }
+
+        a:hover {
+            background-color: $primary2;
+        }
+    }
+
+    .menu-items {
+        width: 100%;
+    }
+
+    .toggle {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+    .pc-nav{display: none;}
+
+}
+
+
+/*CAROUSEL mobile*/
+.pc-carousel{
+    display: none;
+}
+
+.carousel{
+    position: relative;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+.images {
+    width: 500px;
+    height: 400px;
+    
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    font-size: 2.5rem;
+    background-color: $white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+
+
+}
+  .prev{
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    font-size: 2.5rem;
+    background-color: $white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+  }
+
+  .next:hover{
+        background-color: $primary2;
+  }
+  .prev:hover{
+    background-color: $primary2;
+}
+}
+
+
+
+/*HOME*/
+.home-conatiner{
+
+          .company-name {
+            color: $primary;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 1rem;
+          }
+          
+          .brand-name {
+            font-size: $size2;
+            padding: 0 1rem 1rem 1rem;
+          }
+          
+          .description {
+            padding: 1rem;
+            color: $small-text;
+          }
+          
+          .discounted-items {
+            padding: 1rem 1rem 0 1rem;
+            font-size: 25px;
+            font-weight: bold;
+          }
+          
+          
+         .discount {
+              background-color: $primary2;
+              font-size: 17px;
+              color: $primary;
+              padding: 3px;
+              margin-left: 10px;
+              border-radius: 7px;
+           } 
+          .normal-price {
+            font-size: 20px;
+            color: $grey;
+            padding: 0 1rem 1rem 1rem;
+          }
+          
+          .price {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        
+          .price div {
+            flex-grow: 1;
+            text-align: center;
+            padding: 0.5rem 0;
+          }
+          
+          .count-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: hsl(220, 14%, 95%);
+            flex-grow: 4;
+            border-radius: 10px;
+            margin: 16px;
+          }
+          
+          .count-box div {
+            padding: 1rem;
+          }
+          
+          .increase-count {
+            cursor: pointer;
+          }
+          
+          .decrease-count {
+            cursor: pointer;
+          }
+          
+          .add-to-cart {
+            flex-grow: 6;
+            background-color: $primary;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 2px 10px 10px 2px $primary2;
+            cursor: pointer;
+
+          }
+          .add-to-cart:hover{
+            background-color: $primary2;
+
+        }
+
+          
+          .add-to-cart svg {
+            margin-right: 10px;
+          }
+
+
+
+}
+/*media queries*/
+
+
+@media all and (min-width:950px) {
+
+    .carousel{
+        display: none;
+    }
+   .home-conatiner{
+       display: flex;
+       width: 80%;
+       align-items: center;
+       justify-content: center;
+       margin: 0 auto;
+
+    .brand-details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding-right: 2rem;
+    } 
+    .price {
+        
+        display: block;
+        position: relative;
+        margin: 0 0 20px 20px;
+        
+      }
+    
+      .discounted-items{
+          display: block;
+          position: absolute;
+          top: 2px;
+          left: auto;
+      }
+       .normal-price{
+        display: block;
+        position: absolute;
+        top: 39px;
+        left: auto;
+      }
+      .cart-box{
+          width: 100%;
+          display: flex;
+          margin-top: 50px;
+      }
+    
+
+    .pc-carousel{
+        display: block;
+        width: 100%;
+        max-width: 540px;
+        padding-left: 30px;
+
+        img{
+            cursor: pointer;
+            
+            border-radius: 5px;
+
+        }
+        .selected{
+            width: 80%; 
+            border-radius: 15px;
+            
+            height: 400px;
+
+        }
+
+        .image-container{
+            display: flex;
+            align-items: center;
+            width: 85%;
+           
+            margin-top: 20px;
+            justify-content: space-evenly;
+        }
+            
+        .image img:hover {
+            opacity: 0.5;
+        }
+            
+        .image img{
+            width: 75%;
+            height: 75%;
+            border-radius: 5px;
+         }
+            
+       
+        }
+
+   }
+   
+ .container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    
+
+    .menu-items {
+        width: 100%;
+    }
+  
+     .bar{
+         display: none;
+     }
+     .pc-nav{
+        display: flex;
+        
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-left: 20px;
+        }
+        a{
+            font-size: 12px;
+            color: $small-text;
+        }
+        
+       
+        
+    }
+     .pc-menu{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         
+        
+         
+         
+     }
+    
+  
+     .logo{
+        font-size: $logo2;
+        font-weight: bold;
+        text-align: center;
+        margin-top: -5px;
+     }
+     
+    
+
+     
+ }
+}
